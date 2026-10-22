@@ -1,0 +1,32 @@
+body { margin: 0; background: #f3f6f4; font-family: system-ui, sans-serif; color: #1b2a20; }
+.app { max-width: 1250px; margin: 0 auto; padding: 24px; }
+.msg { padding: 60px; text-align: center; font-size: 18px; }
+.layout { display: grid; grid-template-columns: 320px 1fr; gap: 20px; align-items: start; }
+.card { background: #fff; border-radius: 12px; padding: 18px; box-shadow: 0 1px 4px rgba(0,0,0,.08); margin-bottom: 20px; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.wide { grid-column: span 2; }
+.slider { margin: 16px 0; }
+.slider input { width: 100%; accent-color: #2e7d32; }
+.presets { display: flex; gap: 6px; flex-wrap: wrap; }
+.presets button { border: 1px solid #2e7d32; background: #fff; border-radius: 16px; padding: 4px 12px; cursor: pointer; }
+.presets button:hover { background: #e8f5e9; }
+.result { text-align: center; color: #fff; }
+.result.good { background: #2e7d32; } .result.mid { background: #f9a825; } .result.bad { background: #c62828; }
+.big { font-size: 44px; font-weight: 700; } .big small { font-size: 18px; font-weight: 400; }
+.pipeline { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-bottom: 20px; }
+.pipeline span { display: flex; gap: 10px; align-items: center; }
+.step { background: #fff; border: 2px solid #2e7d32; border-radius: 8px; padding: 10px 14px; }
+table { width: 100%; border-collapse: collapse; } td, th { padding: 8px; border-bottom: 1px solid #ddd; text-align: left; }
+tr.best { background: #e8f5e9; font-weight: 600; }
+@media (max-width: 900px) { .layout, .grid { grid-template-columns: 1fr; } .wide { grid-column: auto; } }
+.models { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; }
+.models button { border: 1px solid #0288d1; background: #fff; border-radius: 16px; padding: 4px 12px; cursor: pointer; }
+.models button:hover { background: #e1f5fe; }
+.models button.active { background: #0288d1; color: #fff; }
+.hint { font-size: 13px; color: #546e7a; margin: 6px 0; }
+.small { font-size: 13px; opacity: .9; margin-top: 4px; }
+.goalbtns { margin: 10px 0; }
+.bar { height: 16px; background: #e0e0e0; border-radius: 8px; overflow: hidden; margin: 10px 0; }
+.fill { height: 100%; transition: width .3s; }
+.fill.ok { background: #2e7d32; }
+.fill.no { background: #f9a825; }
